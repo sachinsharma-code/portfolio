@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sachin Sharma | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --text: #f1f5f9;
+      --primary: #3b82f6;
+      --accent: #2563eb;
+    }
+
+    body.light {
+      --bg: #f8fafc;
+      --text: #0f172a;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      transition: 0.3s;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: var(--primary);
+      color: white;
+    }
+
+    header h1 { font-size: 2.8rem; }
+    header h2 { font-size: 1.3rem; margin-top: 0.5rem; }
+
+    .toggle-theme {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      color: var(--primary);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .skills-list, .projects, .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .skill, .tool {
+      background: var(--accent);
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .skill:hover, .tool:hover {
+      background: var(--primary);
+      transform: scale(1.05);
+    }
+
+    .project-card {
+      background: #1e293b;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      flex: 1 1 300px;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      background: #334155;
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1e293b;
+      color: #94a3b8;
+    }
+
+    .resume-btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .projects { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+
+  <header>
+    <h1>Sachin Sharma</h1>
+    <h2>Full Stack Developer</h2>
+  </header>
+
+  <section>
+    <div class="section-title">🎓 Education</div>
+    <p>Bachelor of Computer Applications</p>
+  </section>
+
+  <section>
+    <div class="section-title">💻 Skills</div>
+
+    <h4>Languages:</h4>
+    <div class="skills-list">
+      <div class="skill">Java</div>
+      <div class="skill">Python</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">PHP</div>
+      <div class="skill">C++</div>
+      <div class="skill">C</div>
+      <div class="skill">Apex</div>
+    </div>
+
+    <h4 style="margin-top:1.5rem;">Frameworks:</h4>
+    <div class="skills-list"><div class="skill">.NET</div></div>
+
+    <h4 style="margin-top:1.5rem;">Databases:</h4>
+    <div class="skills-list"><div class="skill">MySQL</div></div>
+
+    <h4 style="margin-top:1.5rem;">Tools:</h4>
+    <div class="skills-list"><div class="tool">VS Code</div></div>
+  </section>
+
+  <section>
+    <div class="section-title">🚀 Projects</div>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive portfolio website using HTML, CSS, and JavaScript with dark/light mode and skills section.</p>
+      </div>
+      <div class="project-card">
+        <h3>Task Manager</h3>
+        <p>Web app using PHP and MySQL to manage daily tasks, track progress, and set reminders.</p>
+      </div>
+      <div class="project-card">
+        <h3>Blog CMS</h3>
+        <p>Basic blog content management system using .NET and MySQL with CRUD operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-title">📄 Resume</div>
+    <a href="resume.pdf" download><button class="resume-btn">Download Resume</button></a>
+  </section>
+
+  <section>
+    <div class="section-title">📞 Contact</div>
+    <div class="contact-info">
+      <div>Email: sachinsharma.code@gmail.com</div>
+      <div>Phone: 8385841186</div>
+      <div>Address: 12, Kailashpuri Rampuraroad Sanganer, Jaipur Rajasthan</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Sachin Sharma. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("light");
+    }
+  </script>
+
+</body>
+</html>
