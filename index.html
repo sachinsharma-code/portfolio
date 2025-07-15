@@ -113,6 +113,20 @@
       margin-top: 1rem;
     }
 
+    .custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Bootstrap blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+
+  .custom-button:hover {
+    background-color: #0056b3;
+  }
+
     @media (max-width: 600px) {
       header h1 { font-size: 2rem; }
       .projects { flex-direction: column; }
@@ -167,12 +181,22 @@
       <div class="project-card">
         <h3>Digital Sharma G Studio</h3>
         <p>Responsive Studio website using HTML, CSS, and JavaScript with php database || MySQL </p><br>
-        <p>hit to open <a href="https://sachinsharma-code.github.io/Digital-Sharma-G-Studio/" target="_blank" title="project">Sharma G Digital Studio</a></p>
+        <a href="https://sachinsharma-code.github.io/Digital-Sharma-G-Studio/" 
+           target="_blank" 
+           class="custom-button" 
+           title="project">
+          Open Sharma G Digital Studio
+        </a>
       </div>
       <div class="project-card">
         <h3>Lens & Light Studio</h3>
         <p>A professional photography website with booking, query, and gallery pages. Built using React, Bootstrap, AOS, and hosted on GitHub Pages.</p>
-        <a href="https://sachinsharma-code.github.io/lens-light-studio/" target="_blank" class="btn">Lens & Light Studio</a>
+        <a href="https://sachinsharma-code.github.io/lens-light-studio/" 
+           target="_blank" 
+           class="custom-button" 
+           title="project">
+          Lens & Light Studio
+        </a>
 <!--         <a href="https://github.com/sachinsharma-code/lens-light-studio" target="_blank" class="btn btn-outline">GitHub Code</a> -->
       </div>
 
